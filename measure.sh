@@ -22,3 +22,15 @@ jHiccup/jHiccup -l ${LOG_FILE} -d 0 -c java Dummy
 # We are interested in the control process thus the '.c'
 echo Creating human readable logs...
 jHiccup/jHiccupLogProcessor -i ${LOG_FILE}.c -o ${LOG_FILE}
+
+type gnuplot &> /dev/null
+if [ $? -eq 0 ]; then
+
+    echo Found gnuplot...
+
+    if [ ! -d HdrHistogram ]; then
+        git clone https://github.com/HdrHistogram/HdrHistogram.git
+    fi
+
+    HdrHistogram/gnuplotExample/make_percentile_plot -o ${LOG_FILE}.png ${LOG_FILE}.hgrm
+fi
