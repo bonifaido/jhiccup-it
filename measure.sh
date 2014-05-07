@@ -11,11 +11,12 @@ fi
 
 # Compile the dummy program if needed
 if [ ! -f Dummy.class ]; then
+    echo Compiling a dummy program...
     javac Dummy.java
 fi
 
-OS=`uname`-`uname -r`
-LOG_FILE="hiccup.$OS.log"
+OS_KERNEL_VERSION=`uname`-`uname -r`
+LOG_FILE="hiccup.$OS_KERNEL_VERSION"
 
 jHiccup/jHiccup -l ${LOG_FILE} -d 0 -c java Dummy
 
