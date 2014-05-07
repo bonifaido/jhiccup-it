@@ -3,14 +3,14 @@ jhiccup-your-os
 
 This small test runs jHiccup against your favorite OS and JVM, and it's also a small demonstration how to use [jHiccup](http://www.azulsystems.com/jHiccup).
 
-# Prerequisites
-JVM (java) should in `PATH`.
+## Prerequisites
+Your favourite JVM (java) should in be `PATH`.
 
-# Usage
+## Usage
 
 ```
 ./measure.sh
 ```
 
-# TODO
+## TODO
 - add gnuplot example
