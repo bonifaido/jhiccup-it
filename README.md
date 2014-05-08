@@ -1,7 +1,7 @@
 jhiccup-your-os
 ===============
 
-This small test runs jHiccup against your favorite OS and JVM, and it's also a small demonstration how to use [jHiccup](http://www.azulsystems.com/jHiccup).
+This small test runs jHiccup against your favorite OS and JVM, and it's also a small demonstration how to use [jHiccup](https://github.com/giltene/jHiccup).
 
 ## Prerequisites
 - The binaries of your favourite JDK should in be `PATH`.
@@ -15,8 +15,8 @@ This small test runs jHiccup against your favorite OS and JVM, and it's also a s
 
 # Press a key to stop measuring
 
-open hiccup.[OS]-[VERSION].hgrm
+open hiccup.[OS]-[KERNEL-VERSION].hgrm
 
 # If you had Gnuplot
-open hiccup.[OS]-[VERSION].png
+open hiccup.[OS]-[KERNEL-VERSION].png
 ```
