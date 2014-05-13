@@ -11,7 +11,7 @@ This small test runs jHiccup against your favorite OS and JVM, and it's also a s
 ```
 # This downloads jHiccup and does a measurement until a key-press
 # Optionally it will draw a histogram if gnuplot is in PATH.
-./measure.sh
+./measure.sh [java -cp ../classpath MainClass]
 
 # Press a key to stop measuring
 
