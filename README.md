@@ -1,7 +1,7 @@
-jhiccup-your-os
-===============
+jhiccup-it
+==========
 
-This small test runs jHiccup against your favorite OS and JVM, and it's also a small demonstration how to use [jHiccup](https://github.com/giltene/jHiccup).
+This small test runs jHiccup against your favorite app on your favourite OS and JVM, and it's also a small demonstration how to use [jHiccup](https://github.com/giltene/jHiccup).
 
 ## Prerequisites
 - The binaries of your favourite JDK should in be `PATH`.
