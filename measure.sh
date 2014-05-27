@@ -39,11 +39,6 @@ if [ $? -eq 0 ]; then
 
     log Found gnuplot...
 
-    if [ ! -d HdrHistogram ]; then
-        log "Downloading plotter scripts..."
-        git clone https://github.com/HdrHistogram/HdrHistogram.git
-    fi
-
     log Creating jitter image ${LOG_FILE}.png...
     HdrHistogram/gnuplotExample/make_percentile_plot -o ${LOG_FILE}.png ${LOG_FILE}.hgrm
 fi
